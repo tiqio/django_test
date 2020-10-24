@@ -7,6 +7,7 @@ class Person(models.Model):
   age = models.IntegerField(verbose_name='年龄',blank=True,null=True)
   score = models.FloatField(verbose_name='成绩',blank=True,null=True)
   grade = models.IntegerField(verbose_name='年级',blank=True,null=True)
+  
 # app.Person.grade: (fields.E120) CharFields must define a 'max_length' attribute.
   def __str__(self):
     return "%s-%d-%d-%d"%(self.name,self.age,self.score,self.grade)
