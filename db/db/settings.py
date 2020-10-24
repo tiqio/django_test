@@ -56,8 +56,8 @@ ROOT_URLCONF = 'db.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
-        # 可以用settings将独立的前后端业务逻辑联系起来
+        # 'DIRS': [os.path.join(BASE_DIR,'templates')],
+        # 可以用settings将独立的前后端业务逻辑联系起来,但强制于一个项目
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
