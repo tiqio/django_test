@@ -13,6 +13,16 @@ class GradesAdmin(admin.ModelAdmin):
   #   ("num",{"fields":['score','age','grade']}),
   #   ("others",{"fields":['name']})
   # ] 是一种fields扩展与fields冲突
+  def gender():
+    if self.sgender:
+      return "男"
+    else:
+      return "女"
+  # 根据记录的对象本质,可以修改显示类型
+  # gender.short_description应该就是verbose的关联属性
+
+  list_display = ['name',gender]
+
 
 admin.site.register(Person,GradesAdmin)
-
+  # @admin.register

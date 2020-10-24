@@ -1,8 +1,11 @@
 from django.shortcuts import render
 
 # Create your views here.
+# 视图就是python函数
+
+from django.http import HttpResponse
 
 def index(request):
-  objs=Person.objects.all()
-  return render(request,'index.html',locals())
-  
+  return HttpResponse('some words')
+def detail(request,num):
+  return HttpResponse('detail-%d'%num)

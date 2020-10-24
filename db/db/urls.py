@@ -19,5 +19,6 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index)
+    path('', include('app.urls'))
+    # 实现解耦,将信息都转移到模块内
 ]
