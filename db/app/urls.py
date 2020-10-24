@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
   path('', views.index),
-  re_path(r'(\d+)\$',view.detail)
+  re_path(r'(\d+)',views.detail)
 ]

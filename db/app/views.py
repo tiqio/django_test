@@ -8,4 +8,4 @@ from django.http import HttpResponse
 def index(request):
   return HttpResponse('some words')
 def detail(request,num):
-  return HttpResponse('detail-%d'%num)
+  return HttpResponse('detail-%s'%num)
