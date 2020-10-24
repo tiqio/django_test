@@ -13,4 +13,4 @@ class Person(models.Model):
 # ValueError: Field 'grade' expected a number but got ''.
 # This is a master section
 # This is nogood 
-# try git init
+# try git init: 无法起到全部清除的作用, 想清除应该直接删除
