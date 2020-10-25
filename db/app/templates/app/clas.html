@@ -6,11 +6,14 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>个体罗列</h1>
+  <h1>班级罗列</h1>
   <ul>
-    {%for person in persons%}
+    {%for clas in clases%}
     <!-- 现在被v-for代替 -->
-    <li>人名:{{person.name}}-成绩{{person.score}}</li>
+    <li>
+      <a href="{{clas.pk}}">班级{{clas.pk}}-人数{{clas.num}}</a>
+      <!-- 需要设定人数的动态增加 -->
+    </li>
     {%endfor%}
   </ul>
 </body>
